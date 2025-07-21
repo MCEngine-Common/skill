@@ -48,7 +48,7 @@ repositories {
     maven { url = 'https://oss.sonatype.org/content/repositories/central' }
 
     maven {
-        url = uri("https://maven.pkg.github.com/MCEngine/skill-common")
+        url = uri("https://maven.pkg.github.com/MCEngine-API/skill")
         credentials {
             username = project.user_git_name
             password = project.user_github_token ?: project.repository_token ?: project.organization_token
@@ -58,6 +58,7 @@ repositories {
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.21.8-R0.1-SNAPSHOT'
+    compileOnly 'io.github.mcengine:skill-api:2025.0.7-22'
 }
 
 shadowJar {
